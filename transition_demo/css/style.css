@@ -1,0 +1,54 @@
+body {
+    background-color: gray;
+}
+.center{
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+}
+.container{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.box {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    background: #fff;
+    animation: loading-box 1.5s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.container div:nth-child(1) {
+    left: 10px;
+}
+
+.container div:nth-child(2) {
+    left: 50px;
+    animation-delay: 0.25s;
+}
+
+
+.container div:nth-child(3) {
+    left: 90px;
+    animation-delay: 0.5s;
+}
+
+@keyframes loading-box {
+    0% {
+        top: 28px;
+        height: 90px;
+    }
+
+    50% {
+        top: 44px;
+        height: 60px;
+    }
+
+    100% {
+        top: 44px;
+        height: 60px;
+    }
+}
