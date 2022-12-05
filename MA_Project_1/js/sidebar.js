@@ -1,4 +1,4 @@
-sidebar = "<section class=\"d-flex flex-column flex-shrink-0 p-3 text-bg-dark\" style=\"width: 280px; height: 100vh;\">\n" +
+sidebar = "<div class=\"d-flex flex-column flex-shrink-0 p-3 text-bg-dark\" style=\"width: 280px; height: 100vh;\">\n" +
     "        <a href=\"/\" class=\"d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none\">\n" +
     "            <svg class=\"bi pe-none me-2\" width=\"40\" height=\"32\">\n" +
     "                <use xlink:href=\"#shop\"/>\n" +
@@ -48,9 +48,9 @@ sidebar = "<section class=\"d-flex flex-column flex-shrink-0 p-3 text-bg-dark\" 
     "                </a>\n" +
     "            </li>\n" +
     "        </ul>\n" +
-    "    </section>"
+    "    </div>"
 
-document.getElementById("main").innerHTML = sidebar + document.getElementById("main").innerHTML;
+document.getElementById("sidebar").innerHTML = sidebar + document.getElementById("main").innerHTML;
 const title = document.getElementsByTagName("title")[0].innerHTML;
 console.log(title)
 document.getElementById(title).innerHTML = document.getElementById(title).innerHTML.replace("text-white", "active");
