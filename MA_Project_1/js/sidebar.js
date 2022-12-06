@@ -23,14 +23,6 @@ sidebar = "<div class=\"d-flex flex-column flex-shrink-0 p-3 text-bg-dark\" styl
     "                    Dashboard\n" +
     "                </a>\n" +
     "            </li>\n" +
-    "            <li id='Orders'>\n" +
-    "                <a href=\"orders.html\" class=\"nav-link text-white\">\n" +
-    "                    <svg class=\"bi pe-none me-2\" width=\"16\" height=\"16\">\n" +
-    "                        <use xlink:href=\"#table\"/>\n" +
-    "                    </svg>\n" +
-    "                    Orders\n" +
-    "                </a>\n" +
-    "            </li>\n" +
     "            <li id='Products'>\n" +
     "                <a href=\"products.html\" class=\"nav-link text-white\">\n" +
     "                    <svg class=\"bi pe-none me-2\" width=\"16\" height=\"16\">\n" +
