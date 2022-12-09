@@ -27,13 +27,14 @@
     line.material.transparent = true;
 
     scene.add(line);
-    camera.position.z = 5;
+    camera.position.z = 500;
 
     function animate() {
         requestAnimationFrame(animate);
 
         line.rotation.x += 0.01;
         line.rotation.y += 0.01;
+        line.rotation.z += 0.01;
 
         renderer.render(scene, camera);
     }
