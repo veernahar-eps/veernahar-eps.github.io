@@ -20,6 +20,10 @@
 
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </head>
 
 <body>
@@ -36,7 +40,7 @@
 </header>
 
 <section id="person" class="d-flex flex-column justify-content-center">
-    <div class="container">
+    <div class="container aos-item" data-aos="fade-in">
         <h1>I'm Veer Nahar</h1>
         <p>UI Designer</p>
         <div class="social-links">
@@ -48,6 +52,13 @@
         </div>
     </div>
 </section>
+
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        duration: 3000
+    });
+</script>
 
 </body>
 </html>

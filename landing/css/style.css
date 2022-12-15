@@ -73,13 +73,14 @@ body {
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
+    color: lightgray;
 }
 
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu li:hover > a span {
-    color: #fff;
+    color: lightgray;
     background: none;
 }
 
@@ -126,4 +127,8 @@ body {
     line-height: 1;
     margin-right: 20px;
     transition: 0.3s;
+}
+
+.container{
+    margin-left: 17%;
 }
