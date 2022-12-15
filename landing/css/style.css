@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Comfortaa', cursive;
+    width: 100vw;
+    height: 100vh;
 }
 
 #header {
