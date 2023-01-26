@@ -34,8 +34,12 @@ body{
 
 }
 
-.inner{
-    text-align: center;
+.pl{
+    padding-left: 10px;
+}
+
+.code{
+    margin-left: 10px;
 }
 
 
@@ -46,6 +50,23 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.back{
+    transform: translateY(120px);
+}
+
+.title{
+    transform: translateY(-120px);
+}
+
+.back2{
+    transform: translateY(180px);
+}
+
+.title2{
+    transform: translateY(-190px);
+}
+
 
 .up{
     top:40px;
@@ -129,4 +150,15 @@ body{
     60% {
         transform: translateX(15px);
     }
+}
+
+#code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
 }
