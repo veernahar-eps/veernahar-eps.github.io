@@ -8,7 +8,7 @@ sidebar = "<div class=\"d-flex flex-column flex-shrink-0 p-3 text-bg-dark\" styl
     "        <hr>\n" +
     "        <ul class=\"nav nav-pills flex-column mb-auto\">\n" +
     "            <li id='Home'>\n" +
-    "                <a href=\"index.html\" class=\"nav-link text-white\" aria-current=\"page\">\n" +
+    "                <a href=\"tutorial.html\" class=\"nav-link text-white\" aria-current=\"page\">\n" +
     "                    <svg class=\"bi pe-none me-2\" width=\"16\" height=\"16\">\n" +
     "                        <use xlink:href=\"#home\"/>\n" +
     "                    </svg>\n" +

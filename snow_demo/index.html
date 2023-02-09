@@ -1,20 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Snow Demo</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/dark.css">
 </head>
 <body>
-<main>
-    <h1>Happy Holidays!</h1>
-</main>
-<div id="snow-container">
+<div class="container">
+    <h1 class="text-center p-5">CSS Snowflake Demo</h1>
+    <h4>Step 1. Basic HTML</h4>
+    <p>Add the main heading, as well as a container for the snow.</p>
+    <script src="https://gist.github.com/veernahar/5b5f5b1c91d68f34a3bc032302498d35.js"></script>
+    <h4>Step 2. Some basic styling</h4>
+    <p>Here, we set our background color, as well as center our header vertically/horizontally and set the font size and type</p>
+    <script src="https://gist.github.com/veernahar/30026d9fde5239dc5651c14bf98ffdcb.js"></script>
+    <h4>Step 3. Snow Animations</h4>
+    <p>We will create some keyframes that will describe two movements a snowflake can have</p>
+    <script src="https://gist.github.com/veernahar/1791f2ce60623d1b99b16853ebe04104.js"></script>
+    <h4>Step 4. More CSS</h4>
+    <p>Give our snow container a width and a height, and create the class that will hold the styling for our snowflakes</p>
+    <script src="https://gist.github.com/veernahar/9f779dc09008d89c74caf7015b558f37.js"></script>
+    <h4>Step 5. Javascript time!</h4>
+    <p>First, we will grab out snow container from the document and store it in a constant</p>
+    <script src="https://gist.github.com/veernahar/cf8bb6f677ac38f895592debc50c1d8f.js"></script>
+    <p>Next, we will define the three unicode characters for the three different types of snowflakes we will use</p>
+    <script src="https://gist.github.com/veernahar/3461ac06660a24671647837539f70847.js"></script>
+    <p>We will create a utility function that generates random numbers</p>
+    <script src="https://gist.github.com/veernahar/d8f2eb1e1f35442113581f31862ff66b.js"></script>
+    <p>Using that, a function that will generate a css for a random position for new snowflakes to be created at</p>
+    <script src="https://gist.github.com/veernahar/4aea7b6a8df3cafb6c98e11a64a578aa.js"></script>
+    <p>And finally a function that generates the snowflake in all of its glory</p>
+    <script src="https://gist.github.com/veernahar/b5cc874e45af3321057a16a2ae804a0f.js"></script>
+    <p>Lets try it out with 30 snowflakes!</p>
+    <script src="https://gist.github.com/veernahar/dfded3b3e0a239cc947f1041e64a3f1e.js"></script>
+    <button type="button" class="btn btn-light" onclick="document.location.href='tutorial.html'">See the result!</button>
 </div>
-<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+body {
+    background-color: rgba(0, 0, 0, .9);
+    color: lightgray;
+}
+
+h4{
+    background-color: #202020;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+p{
+    margin-left: 10px;
+}
+
+button{
+    width: 100%;
+}
