@@ -112,18 +112,24 @@ section{
 #person {
     width: 100%;
     height: 100vh;
-    background: url("../img/person.jpg") top right no-repeat;
+    background: url("../img/person.jpg") no-repeat fixed top right;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
 }
 
 #projects{
     width: 100%;
     height: 100vh;
-    background: url("../img/2109.webp") top right no-repeat;
+    background: url("../img/2109.webp") no-repeat fixed top right;
     background-size: cover;
-    background-attachment: fixed;
+    position: relative;
+}
+
+#experience{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/horizon-sunset-mountains-dark.jpg") no-repeat fixed top right;
+    background-size: cover;
     position: relative;
 }
 
@@ -161,6 +167,15 @@ section{
 #projects h1 {
     text-align: center;
     font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 100px;
+}
+
+#experience h1 {
+    text-align: center;
+    font-size: 48px;
     font-weight: 700;
     line-height: 56px;
     color: rgba(255, 255, 255, 0.6);
