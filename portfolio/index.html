@@ -7,26 +7,33 @@
 
     <title>Veer Nahar</title>
 
+    <!-- VN Icon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Boxicons (used for nav) -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Our own styles -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Animate on Scroll Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
+<!-- our navbar, fixed on the side -->
 <header id="header" class="aos-item d-none d-sm-flex flex-column justify-content-center" data-aos="fade-left">
     <nav id="navbar" class="navbar nav-menu">
         <ul>
@@ -39,6 +46,7 @@
     </nav>
 </header>
 
+<!-- landing screen -->
 <section id="person" class="section d-flex flex-column justify-content-center">
     <div class="intro aos-item" data-aos="fade-in">
         <h1>I'm Veer Nahar</h1>
@@ -53,18 +61,22 @@
     </div>
 </section>
 
+<!-- Parallax effect images -->
 <section id="abt" class="section d-none d-sm-flex flex-column justify-content-center">
     <div class="container aos-item" data-aos="fade-in">
         <h1>Eastside Preparatory School '26</h1>
     </div>
 </section>
 
+<!-- Used a trick here where I have two of the same parallax image, so it looks like its just text-->
+<!-- scrolling over the screen without the rest moving -->
 <section id="abt_2" class="section d-none d-sm-flex flex-column justify-content-center">
     <div class="container aos-item" data-aos="fade-in">
         <h1>Founder & CEO, Axon-Robotics LLC</h1>
     </div>
 </section>
 
+<!-- boxicons comes handy once again -->
 <section id="experience" class="section d-none d-sm-flex flex-column justify-content-center">
     <div class="container aos-item" data-aos="fade-in">
         <h1 class="aos-item" data-aos="fade-down">FIRST Tech Challenge Awards</h1>
@@ -88,53 +100,62 @@
     </div>
 </section>
 
+<!-- resume download section, with hover transitions -->
 <section id="resume" class="section d-none d-sm-flex flex-column justify-content-center">
     <div class="container aos-item" data-aos="bounce-in">
-        <h1 onclick="document.location.href='https://www.veernahar.com/_files/ugd/0f6d1e_f2683d48fabb4f52bacf0fe32a3bf28c.pdf'">Download Resume</h1>
+        <h1 onclick="document.location.href='https://www.veernahar.com/_files/ugd/0f6d1e_f2683d48fabb4f52bacf0fe32a3bf28c.pdf'">
+            Download Resume</h1>
     </div>
 </section>
 
 <!--structure from https://mdbootstrap.com/docs/b4/jquery/forms/contact/-->
 <section id="contact" class="section d-none d-sm-flex flex-column justify-content-center">
-    <div class="d-flex flex-column justify-content-center aos-item" data-aos="bounce-in" style="background: rgba(0, 0, 0, .3)">
-            <h2 class="text-center my-4">Contact Me!</h2>
-            <p class="text-center w-responsive mx-auto mb-3">Fill out the form below, and I'll get back as soon as possible</p>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-5 mb-md-0 mb-5">
-                    <form id="contact-form">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" id="name" name="name" class="form-control m-2" placeholder="Your Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <input type="text" id="email" name="email" class="form-control m-2" placeholder="Your email">
-                                </div>
+    <div class="d-flex flex-column justify-content-center aos-item" data-aos="bounce-in"
+         style="background: rgba(0, 0, 0, .3)">
+        <h2 class="text-center my-4">Contact Me!</h2>
+        <p class="text-center w-responsive mx-auto mb-3">Fill out the form below, and I'll get back as soon as
+            possible</p>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-5 mb-md-0 mb-5">
+                <form id="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form">
+                                <input type="text" id="name" name="name" class="form-control m-2"
+                                       placeholder="Your Name">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <input type="text" id="subject" name="subject" class="form-control m-2" placeholder="Subject">
-                                </div>
+                        <div class="col-md-6">
+                            <div class="md-form">
+                                <input type="text" id="email" name="email" class="form-control m-2"
+                                       placeholder="Your email">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form ">
-                                    <textarea type="text" id="message" name="message" rows="9" class="form-control md-textarea m-2" placeholder="Your message"></textarea>
-                                    <a class="btn btn-primary m-2 submit">Send</a>
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <input type="text" id="subject" name="subject" class="form-control m-2"
+                                       placeholder="Subject">
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form ">
+                                <textarea type="text" id="message" name="message" rows="9"
+                                          class="form-control md-textarea m-2" placeholder="Your message"></textarea>
+                                <a class="btn btn-primary m-2 submit">Send</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
+        </div>
     </div>
 </section>
 
+<!-- Init all our aos animations with a duration -->
 <script>
     AOS.init({
         easing: 'ease-in-out-sine',
