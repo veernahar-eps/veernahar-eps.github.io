@@ -31,14 +31,19 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body>
+<body class="no-scroll" id="body">
+
+<!--animation courtesy of https://loading.io/css/-->
+<div id="loader">
+    <div id="wheel" class="lds-dual-ring"></div>
+</div>
 
 <!-- our navbar, fixed on the side -->
 <header id="header" class="aos-item d-none d-sm-flex flex-column justify-content-center" data-aos="fade-left">
     <nav id="navbar" class="navbar nav-menu">
         <ul>
             <li><a href="#person" class="nav-link"><i class="bx bx-home"></i> <span>Home</span></a></li>
-            <li><a href="#abt" class="nav-link"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="#edu" class="nav-link"><i class="bx bx-user"></i> <span>About</span></a></li>
             <li><a href="#experience" class="nav-link"><i class="bx bx-trophy"></i> <span>Awards</span></a></li>
             <li><a href="#resume" class="nav-link"><i class="bx bx-book-content"></i> <span>Resume</span></a></li>
             <li><a href="#contact" class="nav-link"><i class="bx bxs-contact"></i> <span>Contact</span></a></li>
@@ -62,7 +67,7 @@
 </section>
 
 <!-- Parallax effect images -->
-<section id="abt" class="section d-none d-sm-flex flex-column justify-content-center">
+<section id="edu" class="section d-none d-sm-flex flex-column justify-content-center">
     <div class="container aos-item" data-aos="fade-in">
         <h1>Eastside Preparatory School '26</h1>
     </div>
@@ -70,9 +75,9 @@
 
 <!-- Used a trick here where I have two of the same parallax image, so it looks like its just text-->
 <!-- scrolling over the screen without the rest moving -->
-<section id="abt_2" class="section d-none d-sm-flex flex-column justify-content-center">
+<section id="position" class="section d-none d-sm-flex flex-column justify-content-center">
     <div class="container aos-item" data-aos="fade-in">
-        <h1>Founder & CEO, Axon-Robotics LLC</h1>
+        <h1>Founder & CEO, <a target="_blank" href="https://axon-robotics.com">Axon-Robotics LLC</a></h1>
     </div>
 </section>
 
@@ -109,6 +114,7 @@
 </section>
 
 <!--structure from https://mdbootstrap.com/docs/b4/jquery/forms/contact/-->
+<!--but its css was pretty ugly, so I spiced it up a bit-->
 <section id="contact" class="section d-none d-sm-flex flex-column justify-content-center">
     <div class="d-flex flex-column justify-content-center aos-item" data-aos="bounce-in"
          style="background: rgba(0, 0, 0, .3)">
@@ -155,8 +161,10 @@
     </div>
 </section>
 
+<!--height of the footer-->
 <div class="d-none d-sm-flex" style="height: 80px"></div>
 
+<!--(reverse?) parallax footer-->
 <footer class="d-none d-sm-flex">
     <p>&copy Veer Nahar 2023</p>
     <div class="social-links">
@@ -168,12 +176,29 @@
     </div>
 </footer>
 
-<!-- Init all our aos animations with a duration -->
 <script>
-    AOS.init({
-        easing: 'ease-in-out-sine',
-        duration: 3000
-    });
+    //when our page is done loading, clear the loading screen
+    window.addEventListener('load', function () {
+        setTimeout(()=>{
+            //fade out
+            document.getElementById('loader').style.transition = '2.5s';
+            document.getElementById('loader').style.backgroundColor = 'transparent';
+
+            //show normal content
+            document.getElementById('body').classList.remove('no-scroll');
+            document.getElementById('wheel').style.display = 'none';
+
+            //init page animations
+            AOS.init({
+                easing: 'ease-in-out-sine',
+                duration: 3000
+            });
+        }, 1500)
+        setTimeout(()=>{
+            //clear the div so hover animations work
+            document.getElementById('loader').style.display = 'none';
+        }, 4000)
+    })
 </script>
 
 </body>
